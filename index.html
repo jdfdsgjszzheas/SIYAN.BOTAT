@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚠️ البوت تحت الصيانة الطارئة</title>
+    <!-- استيراد خط Tajawal من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fdf0f0; /* خلفية حمراء فاتحة */
+            font-family: 'Tajawal', sans-serif;
+            color: #333;
+        }
+
+        .maintenance-card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.2); /* ظل بلون أحمر */
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            border-top: 5px solid #c0392b; /* شريط علوي أحمر */
+        }
+
+        .icon-box {
+            font-size: 60px;
+            color: #c0392b; /* لون أيقونة أحمر داكن */
+            margin-bottom: 20px;
+            animation: wrench 2.5s infinite ease-in-out;
+        }
+
+        @keyframes wrench {
+            0%, 100% { transform: rotate(-12deg); }
+            50% { transform: rotate(12deg); }
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #e74c3c; /* لون عنوان أحمر */
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* نص تحفيزي أحمر */
+        .urgent-text {
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        .bot-link {
+            display: inline-flex;
+            align-items: center;
+            background-color: #e74c3c; /* لون زر أحمر */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .bot-link:hover {
+            background-color: #c0392b; /* لون زر أحمر أغمق عند التحويم */
+            transform: translateY(-3px);
+        }
+
+        .bot-link i {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="maintenance-card">
+        <div class="icon-box">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h1>⚠️ البوت تحت الصيانة الطارئة ⚠️</h1>
+        <p>لضمان استمرار خدماتنا بدون توقف، <span class="urgent-text">يرجى فوراً</span> الانتقال إلى بوتنا الاحتياطي. لا تفوت أي تحديثات!</p>
+        
+        <a href="https://t.me/CH_XEC_bot" class="bot-link">
+            <i class="fab fa-telegram-plane"></i>
+           @CH_XEC_BOT
+        </a>
+
+        <div class="footer-text">
+            شكراً لتعاونكم السريع
+        </div>
+    </div>
+
+</body>
+</html>
